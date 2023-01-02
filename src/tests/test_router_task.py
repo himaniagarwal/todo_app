@@ -25,8 +25,6 @@ def test_200_create_task():
         "description": "Test description"
     }
     response = client.post("/tasks/", json=data)
-    print("printing the ************************@@@@@@@")
-    print(response.json())
     assert response.status_code == 200
     assert response.json()["success"] is True
 
