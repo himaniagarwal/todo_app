@@ -2,7 +2,7 @@ TODO List application
 ==================
 
 ## Run the application
-1. Clone the repo from ""
+1. Clone the repo
 2. Run  ``docker build . -f dockerfiles/Dockerfile -t todoapp`` 
 3. Run ``docker run todoapp -p 80:80``
 4. Run ``docker build . -f dockerfiles/Dockerfile-test -t todoapp-test``
