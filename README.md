@@ -50,7 +50,7 @@ OR \
  
 
 ### 8. DB operations
-sqlite3
-.open sql_app.db
-.tables
-select * from tasks;
+sqlite3 \
+.open sql_app.db \
+.tables \
+select * from tasks; \
