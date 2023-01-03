@@ -34,7 +34,16 @@ Search task(or tasks) by multiple search terms in description
 curl  -v -L "http://127.0.0.1:8000/tasks/search?q=abc&q=def" 
 
 ### 6. Update task by title (edit title, edit description, mark task as completed )
-curl -L -v -H "Content-Type: application/json" -X PATCH -d @sample.json "http://127.0.0.1:8000/tasks/{task_id}"
+curl -L -v -H "Content-Type: application/json" -X PATCH -d @sample.json "http://127.0.0.1:8000/tasks/{task_id}" \
+sample.json: \
+{ "title" : " Updated title"} \
+OR \
+{"description": "updated description"} \
+OR \
+{ "title" : " Updated title" \
+description": "updated description"} \
+OR \
+{"completed": true} \
 
 ### 7. Delete task by task id
  curl -X "DELETE"  "http://127.0.0.1:8000/tasks/{task_id}"  
