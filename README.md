@@ -5,8 +5,10 @@ TODO List application
 1. Clone the repo
 2. Run  ``docker build . -f dockerfiles/Dockerfile -t todoapp`` 
 3. Run ``docker run todoapp -p 80:80``
-4. Run ``docker build . -f dockerfiles/Dockerfile-test -t todoapp-test``
-5. Run `` docker run todoapp-test ``
+
+## Run tests
+1. Run ``docker build . -f dockerfiles/Dockerfile-test -t todoapp-test``
+2. Run `` docker run todoapp-test ``
 
 
 ### 1. Task creation
